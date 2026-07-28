@@ -277,6 +277,7 @@ input:checked + .slider-toggle:before{transform:translateX(16px);}
 .floaty2{animation:floaty 5.5s ease-in-out infinite .6s;}
 .floaty3{animation:floaty 5s ease-in-out infinite 1.1s;}
 @keyframes floaty{0%,100%{transform:translateY(0px);}50%{transform:translateY(-9px);}}
+@keyframes bounce{0%,100%{transform:translateY(0);}25%{transform:translateY(-4px);}50%{transform:translateY(0);}75%{transform:translateY(-2px);}}
 @media (prefers-reduced-motion:reduce){.floaty,.floaty2,.floaty3{animation:none;}}
 
 /* glass mini cards inside hero */
@@ -413,7 +414,7 @@ input:checked + .slider-toggle:before{transform:translateX(16px);}
   <!-- ===================== SIDEBAR ===================== -->
   <aside class="sidebar" id="sidebar">
     <div class="brand">
-      <div class="brand-mark">PZ</div>
+      <img class="brand-mark" src="https://res.cloudinary.com/dynhnvqpn/image/upload/v1773398640/Pardapizza_ynwlub.png" alt="Pardapizza" style="object-fit:cover;">
       <div class="brand-text">
         <b>Pardapizza.id</b>
         <span>Report By Arif Duha</span>
@@ -485,13 +486,13 @@ input:checked + .slider-toggle:before{transform:translateX(16px);}
 
         <div class="dropdown">
           <button class="dropdown-toggle" data-bs-toggle="dropdown" style="border:none;background:transparent;padding:0;">
-            <div class="avatar">AD</div>
+            <div class="avatar" style="animation:bounce 1.2s ease-in-out infinite;"><i data-lucide="bot" style="width:20px;height:20px;"></i></div>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li class="px-2 pb-2 pt-1"><div style="font-size:13px;font-weight:800;">Admin Marketing</div><div style="font-size:11.5px;color:var(--text-3);">admin@pardapizza.id</div></li>
             <li><hr class="dropdown-divider" style="margin:6px 0;"></li>
             <li><a class="dropdown-item" href="#" onclick="return false;">More Case Study</a></li>
-            <li><a class="dropdown-item" href="#" onclick="return false;">Contact Arif Duha</a></li>
+            <li><a class="dropdown-item" href="#" onclick="return false;">Contact Arif Duha · 081615628296</a></li>
             <li><a class="dropdown-item" href="#" onclick="return false;">Back To Home </a></li>
           </ul>
         </div>
